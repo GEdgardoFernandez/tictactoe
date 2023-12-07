@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nova+Square&family=Prata&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylos.css">
+  <script src="juego.js" defer></script>
+  <title>Tic Tac Toe</title>
+</head>
+<body>
+
+
+  <header>
+    <div class="paste-button">
+      <button class="button">Menu &nbsp; ▼</button>
+      <div class="dropdown-content">
+        <a id="top" href="#" onclick="recargarPagina()">Reset Game</a>
+        <a id="middle" href="#">Web del Creador</a>
+        <a id="bottom" href="https://cafecito.app/serviciotecnico2c2">Donar</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <h1><span class="Tic">Tic</span><span class="Tac">Tac</span><span class="Toe">Toe</span></h1>
+    <div id="contenedorGrilla">
+      <div class="cuadrado arriba"></div>
+      <div class="cuadrado arriba medio"></div>
+      <div class="cuadrado arriba"></div>
+      <div class="cuadrado"></div>
+      <div class="cuadrado medio"></div>
+      <div class="cuadrado"></div>
+      <div class="cuadrado abajo"></div>
+      <div class="cuadrado abajo medio"></div>
+      <div class="cuadrado abajo"></div>
+    </div>
+    <!-- <div class="marcador">
+      <div class="player1">
+        <h4>Jugador X</h4>
+        <p id="player1"></p>
+      </div>
+      <div class="player2">
+        <h4>Jugador O</h4>
+        <p id="player2"></p>
+      </div>
+    </div> -->
+  </main>
+  <dialog type="modal">
+    <h3>Fin de la partida</h3>
+    <button>Volver a Jugar</button>
+  </dialog>
+</body>
+</html>
